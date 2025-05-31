@@ -22,6 +22,30 @@ from utils.encryption import FileEncryption
 from utils.config import Config
 
 
+ascii_art = [
+    r"             ___________              ",
+    r"         .-'           '-.           ",
+    r"       .'                 '.         ",
+    r"      /     _________       \        ",
+    r"     |     /         \       |       ",
+    r"     |    |  ()   ()  |      |       ",
+    r"     |     \    ∆    /       |       ",
+    r"      \     '.___.'        /         ",
+    r"       '.                 .'         ",
+    r"         '-.__________.-'           ",
+    r"                                     ",
+    r"          /===========\             ",
+    r"         |  DISK.IMG   |            ",
+    r"          \___________/             ",
+    r"                                     ",
+    r"       [ MOUNTED STORAGE ]          "
+]
+for line in ascii_art:
+    print(line)
+
+
+
+
 # Constants
 DEFAULT_DISK_SIZE_MB = 1024
 DEFAULT_SECTOR_SIZE = 512
@@ -30,7 +54,7 @@ DEFAULT_DISK_IMAGE = 'virtual_disk.img'
 
 class FAT32Manager:
     """Main FAT32 disk management class"""
-    
+
     def __init__(self):
         self.logger = Logger()
         self.config = Config()
@@ -64,13 +88,13 @@ class FAT32Manager:
         except Exception as e:
             self.logger.error(f"Failed to create disk: {str(e)}")
             return False
-    
+
     def clone_disk(self, source_path, target_path):
         """Clone a disk (physical or virtual)"""
         try:
             start_time = time()
             self.logger.info(f"Cloning disk from {source_path} to {target_path}")
-            
+
             with open(source_path, 'rb') as src:
                 with open(target_path, 'wb') as dst:
                     while True:
@@ -78,11 +102,11 @@ class FAT32Manager:
                         if not chunk:
                             break
                         dst.write(chunk)
-            
+
             end_time = time()
             self.logger.info(f"Disk cloned successfully in {end_time - start_time:.2f}s")
             return True
-            
+
         except Exception as e:
             self.logger.error(f"Failed to clone disk: {str(e)}")
             return False
@@ -136,65 +160,65 @@ class FAT32Manager:
             self.logger.error(f"Failed to mount disk: {str(e)}")
             return None
 
-    
+
     def list_files(self, filename, path="/", recursive=False):
         """List files and directories"""
         file_ops = self.mount_disk(filename)
         if not file_ops:
             return False
-            
+
         try:
             entries = file_ops.list_directory(path, recursive)
-            
+
             print(f"\nDirectory listing for {path}:")
             print("-" * 60)
             print(f"{'Name':<20} {'Type':<6} {'Size':<10} {'Modified':<20}")
             print("-" * 60)
-            
+
             for entry in entries:
                 entry_type = "DIR" if entry['is_directory'] else "FILE"
                 size = "" if entry['is_directory'] else str(entry['size'])
                 print(f"{entry['name']:<20} {entry_type:<6} {size:<10} {entry['modified']:<20}")
-            
+
             return True
-            
+
         except Exception as e:
             self.logger.error(f"Failed to list files: {str(e)}")
             return False
-    
+
     def search_files(self, filename, start_date=None, end_date=None, pattern=None):
         """Search files by date range and/or pattern"""
         file_ops = self.mount_disk(filename)
         if not file_ops:
             return False
-            
+
         try:
             results = file_ops.search_files(start_date, end_date, pattern)
-            
+
             print(f"\nSearch results:")
             print("-" * 60)
             print(f"{'Name':<20} {'Path':<25} {'Size':<10} {'Modified':<20}")
             print("-" * 60)
-            
+
             for result in results:
                 print(f"{result['name']:<20} {result['path']:<25} {result['size']:<10} {result['modified']:<20}")
-            
+
             print(f"\nFound {len(results)} files")
             return True
-            
+
         except Exception as e:
             self.logger.error(f"Failed to search files: {str(e)}")
             return False
-    
+
     def health_report(self, filename):
         """Generate comprehensive health report"""
         file_ops = self.mount_disk(filename)
         if not file_ops:
             return False
-            
+
         try:
             report = file_ops.generate_health_report()
-            
+
             print(f"\n{'='*60}")
             print(f"HEALTH REPORT FOR: {filename}")
             print(f"{'='*60}")
@@ -204,48 +228,48 @@ class FAT32Manager:
             print(f"  Sector Size: {report['sector_size']} bytes")
             print(f"  Cluster Size: {report['cluster_size']} bytes")
             print(f"  Total Clusters: {report['total_clusters']:,}")
-            
+
             print(f"\nFAT Statistics:")
             print(f"  Free Clusters: {report['free_clusters']:,}")
             print(f"  Used Clusters: {report['used_clusters']:,}")
             print(f"  Bad Clusters: {report['bad_clusters']:,}")
             print(f"  Free Space: {report['free_space'] / (1024*1024):.1f} MB")
-            
+
             print(f"\nSlack Space Analysis:")
             print(f"  Total Slack Space: {report['total_slack'] / 1024:.1f} KB")
             print(f"  Average Slack per File: {report['avg_slack_per_file']:.1f} bytes")
-            
+
             print(f"\nFile System Health:")
             print(f"  Cross-linked Clusters: {report['cross_linked_clusters']}")
             print(f"  Lost Chains: {report['lost_chains']}")
             print(f"  Integrity Status: {report['integrity_status']}")
-            
+
             if report['recommendations']:
                 print(f"\nRecommendations:")
                 for rec in report['recommendations']:
                     print(f"  • {rec}")
-            
+
             return True
-            
+
         except Exception as e:
             self.logger.error(f"Failed to generate health report: {str(e)}")
             return False
-    
+
     def create_file(self, disk_filename, file_path, content, encrypt=False, password=None):
         """Create a file on the disk"""
         file_ops = self.mount_disk(disk_filename)
         if not file_ops:
             return False
-            
+
         try:
             if encrypt and password:
                 encryptor = FileEncryption()
                 content = encryptor.encrypt(content.encode(), password)
             elif isinstance(content, str):
                 content = content.encode()
-                
+
             success = file_ops.create_file(file_path, content)
-            
+
             if success:
                 action = "encrypted file" if encrypt else "file"
                 self.logger.info(f"Created {action}: {file_path}")
@@ -253,28 +277,28 @@ class FAT32Manager:
             else:
                 self.logger.error(f"Failed to create file: {file_path}")
                 return False
-                
+
         except Exception as e:
             self.logger.error(f"Failed to create file: {str(e)}")
             return False
-    
+
     def read_file(self, disk_filename, file_path, decrypt=False, password=None):
         """Read a file from the disk"""
         file_ops = self.mount_disk(disk_filename)
         if not file_ops:
             return None
-            
+
         try:
             content = file_ops.read_file(file_path)
             if content is None:
                 return None
-                
+
             if decrypt and password:
                 encryptor = FileEncryption()
                 content = encryptor.decrypt(content, password)
-                
+
             return content
-            
+
         except Exception as e:
             self.logger.error(f"Failed to read file: {str(e)}")
             return None
@@ -433,24 +457,24 @@ def main():
     clone_parser = subparsers.add_parser('clone-disk', help='Clone a disk')
     clone_parser.add_argument('source', help='Source disk path')
     clone_parser.add_argument('target', help='Target disk path')
-    
+
     # List files command
     list_parser = subparsers.add_parser('list', help='List files and directories')
     list_parser.add_argument('disk', help='Disk image filename')
     list_parser.add_argument('--path', default='/', help='Directory path to list')
     list_parser.add_argument('--recursive', action='store_true', help='Recursive listing')
-    
+
     # Search files command
     search_parser = subparsers.add_parser('search', help='Search files')
     search_parser.add_argument('disk', help='Disk image filename')
     search_parser.add_argument('--start-date', help='Start date (YYYY-MM-DD)')
     search_parser.add_argument('--end-date', help='End date (YYYY-MM-DD)')
     search_parser.add_argument('--pattern', help='Filename pattern')
-    
+
     # Health report command
     health_parser = subparsers.add_parser('health-report', help='Generate health report')
     health_parser.add_argument('disk', help='Disk image filename')
-    
+
     # Create file command
     create_file_parser = subparsers.add_parser('create-file', help='Create a file')
     create_file_parser.add_argument('disk', help='Disk image filename')
@@ -458,7 +482,7 @@ def main():
     create_file_parser.add_argument('content', help='File content')
     create_file_parser.add_argument('--encrypt', action='store_true', help='Encrypt file')
     create_file_parser.add_argument('--password', help='Encryption password')
-    
+
     # Read file command
     read_file_parser = subparsers.add_parser('read-file', help='Read a file')
     read_file_parser.add_argument('disk', help='Disk image filename')
@@ -511,29 +535,29 @@ def main():
         parser.print_help()
         input("\nPress Enter to exit...")
         return
-    
+
     manager = FAT32Manager()
 
     if args.command == 'create-disk':
         success = manager.create_disk(args.size, args.filename, args.cluster_size)
         sys.exit(0 if success else 1)
-        
+
     elif args.command == 'clone-disk':
         success = manager.clone_disk(args.source, args.target)
         sys.exit(0 if success else 1)
-        
+
     elif args.command == 'list':
         success = manager.list_files(args.disk, args.path, args.recursive)
         sys.exit(0 if success else 1)
-        
+
     elif args.command == 'search':
         success = manager.search_files(args.disk, args.start_date, args.end_date, args.pattern)
         sys.exit(0 if success else 1)
-        
+
     elif args.command == 'health-report':
         success = manager.health_report(args.disk)
         sys.exit(0 if success else 1)
-        
+
     elif args.command == 'create-file':
         success = manager.create_file(args.disk, args.path, args.content, args.encrypt, args.password)
         sys.exit(0 if success else 1)
@@ -573,7 +597,7 @@ def main():
             sys.exit(0 if success else 1)
         else:
             sys.exit(0)
-        
+
     elif args.command == 'read-file':
         content = manager.read_file(args.disk, args.path, args.decrypt, args.password)
         if content is not None:
@@ -586,6 +610,7 @@ def main():
 if __name__ == "__main__":
     if len(sys.argv) == 1:
         print("FAT32 Virtual Disk Management System")
+
 
         # Ask user for disk name
         disk_name = input("Enter disk image filename (press Enter for default 'virtual_disk.img'): ").strip()
