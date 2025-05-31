@@ -1,0 +1,2643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1131</width>
+    <height>743</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(245, 250, 254);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="1">
+     <widget class="QWidget" name="icon_name_widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(31, 149, 239);
+color: white;
+
+}
+
+QPushButton {
+   color:white;
+   text-align:left;
+   height:30px;	
+   border:none;
+   padding-left:10px;
+   border-top-left-radius:10px;
+   border-bottom-left-radius:10px;
+}
+
+QPushButton:checked{
+background-color: #F5FAFE;
+color:#1F95EF;
+font-weight:bold;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="rightMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="minimumSize">
+            <size>
+             <width>55</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>55</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="white/white.qrc">:/white/disc.svg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>15</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="dashboard_2">
+           <property name="text">
+            <string>Dashboard</string>
+           </property>
+           <property name="icon">
+            <iconset resource="white/white.qrc">
+             <normaloff>:/white/grid.svg</normaloff>
+             <normalon>:/icons2/grid.svg</normalon>:/white/grid.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="profile_2">
+           <property name="text">
+            <string>Logs</string>
+           </property>
+           <property name="icon">
+            <iconset resource="white/white.qrc">
+             <normaloff>:/white/file-minus.svg</normaloff>
+             <normalon>:/icons2/file-minus.svg</normalon>:/white/file-minus.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="messages_2">
+           <property name="text">
+            <string>FAT table Info</string>
+           </property>
+           <property name="icon">
+            <iconset resource="white/white.qrc">
+             <normaloff>:/white/database.svg</normaloff>
+             <normalon>:/icons2/database.svg</normalon>:/white/database.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="notifications_2">
+           <property name="text">
+            <string>Notifications</string>
+           </property>
+           <property name="icon">
+            <iconset resource="white/white.qrc">
+             <normaloff>:/white/bell.svg</normaloff>
+             <normalon>:/icons2/bell.svg</normalon>:/white/bell.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="settings_2">
+           <property name="text">
+            <string>About</string>
+           </property>
+           <property name="icon">
+            <iconset resource="white/white.qrc">
+             <normaloff>:/white/info.svg</normaloff>
+             <normalon>:/icons2/info.svg</normalon>:/white/info.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>185</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(31, 149, 239);
+color: white;
+
+}</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_19">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>181</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+color:#000000;
+	background-color: rgb(0, 255, 255);
+border-radius:15px;}
+QPushButton:checked{
+background-color: rgb(198, 200, 99);
+color:#000000;
+font-weight:bold;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Profile Menu</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons1/icons1.qrc">
+            <normaloff>:/icons1/chevrons-up.svg</normaloff>
+            <normalon>:/feathers/chevrons-down.svg</normalon>:/icons1/chevrons-up.svg</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>342</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="text">
+          <string>Sign Out</string>
+         </property>
+         <property name="icon">
+          <iconset resource="white/white.qrc">
+           <normaloff>:/white/power.svg</normaloff>:/white/power.svg</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QWidget" name="main_menu" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QWidget" name="header_widget" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="menu">
+            <property name="styleSheet">
+             <string notr="true">border:none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="feathers/feathers.qrc">
+              <normaloff>:/feathers/align-justify.svg</normaloff>:/feathers/align-justify.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>143</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLineEdit" name="lineEdit"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_14">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="feathers/feathers.qrc">
+                <normaloff>:/feathers/search.svg</normaloff>:/feathers/search.svg</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>185</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>    FAT32 DISK MANAGER</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>142</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_18">
+            <property name="styleSheet">
+             <string notr="true">border:none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="blue/blue.qrc">
+              <normaloff>:/blue/bell.svg</normaloff>
+              <normalon>:/icons/bell-off.svg</normalon>:/blue/bell.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_15">
+            <property name="styleSheet">
+             <string notr="true">border:none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="blue/blue.qrc">
+              <normaloff>:/blue/file-minus.svg</normaloff>:/blue/file-minus.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="dashboard_page">
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QTabWidget" name="tabWidget">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(176, 176, 176);</string>
+             </property>
+             <property name="currentIndex">
+              <number>1</number>
+             </property>
+             <widget class="QWidget" name="tab">
+              <attribute name="title">
+               <string>Disk OPs</string>
+              </attribute>
+              <widget class="QLabel" name="label_4">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>71</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Create Disk:</string>
+               </property>
+              </widget>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>40</y>
+                 <width>62</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="decimals">
+                <number>0</number>
+               </property>
+               <property name="minimum">
+                <double>1.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>8192.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>1024.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>1024.000000000000000</double>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_9">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>40</y>
+                 <width>21</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>MB</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_10">
+               <property name="geometry">
+                <rect>
+                 <x>110</x>
+                 <y>40</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Cluster Size:</string>
+               </property>
+              </widget>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+               <property name="geometry">
+                <rect>
+                 <x>190</x>
+                 <y>40</y>
+                 <width>41</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="decimals">
+                <number>0</number>
+               </property>
+               <property name="minimum">
+                <double>4.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>32.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>4.000000000000000</double>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_11">
+               <property name="geometry">
+                <rect>
+                 <x>240</x>
+                 <y>40</y>
+                 <width>21</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>KB</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_12">
+               <property name="geometry">
+                <rect>
+                 <x>270</x>
+                 <y>40</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Disk Name:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_2">
+               <property name="geometry">
+                <rect>
+                 <x>340</x>
+                 <y>40</y>
+                 <width>113</width>
+                 <height>25</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(123, 111, 255);</string>
+               </property>
+               <property name="placeholderText">
+                <string>Without Extension</string>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="comboBox">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>460</x>
+                 <y>40</y>
+                 <width>61</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="editable">
+                <bool>false</bool>
+               </property>
+               <property name="insertPolicy">
+                <enum>QComboBox::InsertAtBottom</enum>
+               </property>
+               <item>
+                <property name="text">
+                 <string>.img</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>.bin</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>.iso</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>.cue</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>.dmg</string>
+                </property>
+               </item>
+              </widget>
+              <widget class="QPushButton" name="pushButton_20">
+               <property name="geometry">
+                <rect>
+                 <x>670</x>
+                 <y>35</y>
+                 <width>111</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color:#000000;
+	background-color: rgb(0, 255, 255);
+border-radius:15px;}
+QPushButton:checked{
+background-color: rgb(198, 200, 99);
+color:#000000;
+font-weight:bold;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Create</string>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers/feathers.qrc">
+                 <normaloff>:/feathers/chevrons-up.svg</normaloff>:/feathers/chevrons-up.svg</iconset>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_6">
+               <property name="geometry">
+                <rect>
+                 <x>340</x>
+                 <y>120</y>
+                 <width>113</width>
+                 <height>25</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(123, 111, 255);</string>
+               </property>
+               <property name="placeholderText">
+                <string>Without Extension</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_28">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>90</y>
+                 <width>71</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Delete Disk:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_29">
+               <property name="geometry">
+                <rect>
+                 <x>270</x>
+                 <y>120</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Disk Name:</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_25">
+               <property name="geometry">
+                <rect>
+                 <x>670</x>
+                 <y>110</y>
+                 <width>111</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color:#000000;
+	background-color: rgb(0, 255, 255);
+border-radius:15px;}
+QPushButton:checked{
+background-color: rgb(198, 200, 99);
+color:#000000;
+font-weight:bold;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Delete</string>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers/feathers.qrc">
+                 <normaloff>:/feathers/chevrons-down.svg</normaloff>:/feathers/chevrons-down.svg</iconset>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="comboBox_5">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>460</x>
+                 <y>120</y>
+                 <width>61</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="editable">
+                <bool>false</bool>
+               </property>
+               <property name="insertPolicy">
+                <enum>QComboBox::InsertAtBottom</enum>
+               </property>
+               <item>
+                <property name="text">
+                 <string>.img</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>.bin</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>.iso</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>.cue</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>.dmg</string>
+                </property>
+               </item>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_7">
+               <property name="geometry">
+                <rect>
+                 <x>340</x>
+                 <y>190</y>
+                 <width>113</width>
+                 <height>25</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(123, 111, 255);</string>
+               </property>
+               <property name="placeholderText">
+                <string/>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_30">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>160</y>
+                 <width>71</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Mount Disk:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_31">
+               <property name="geometry">
+                <rect>
+                 <x>270</x>
+                 <y>190</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Disk Path:</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_26">
+               <property name="geometry">
+                <rect>
+                 <x>670</x>
+                 <y>190</y>
+                 <width>111</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	background-color: rgb(219, 111, 255);
+	background-color: rgb(255, 255, 255);
+border-radius:15px;}
+
+</string>
+               </property>
+               <property name="text">
+                <string>Mount</string>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers/feathers.qrc">
+                 <normaloff>:/feathers/check-circle.svg</normaloff>:/feathers/check-circle.svg</iconset>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton">
+               <property name="geometry">
+                <rect>
+                 <x>460</x>
+                 <y>190</y>
+                 <width>61</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius: 4px;
+background-color: rgb(255, 255, 127);</string>
+               </property>
+               <property name="text">
+                <string>find</string>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers/feathers.qrc">
+                 <normaloff>:/feathers/arrow-up-right.svg</normaloff>:/feathers/arrow-up-right.svg</iconset>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>240</y>
+                 <width>271</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <property name="toolTip">
+                <string>Generate Health Report for Mounted Disk</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
+background-color: rgb(170, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>    Generate Health Report</string>
+               </property>
+               <property name="icon">
+                <iconset resource="white/white.qrc">
+                 <normaloff>:/white/arrow-right-circle.svg</normaloff>:/white/arrow-right-circle.svg</iconset>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_27">
+               <property name="geometry">
+                <rect>
+                 <x>670</x>
+                 <y>320</y>
+                 <width>111</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	background-color: rgb(219, 111, 255);
+	background-color: rgb(255, 255, 255);
+border-radius:15px;}
+
+</string>
+               </property>
+               <property name="text">
+                <string>Format</string>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers/feathers.qrc">
+                 <normaloff>:/feathers/codesandbox.svg</normaloff>:/feathers/codesandbox.svg</iconset>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="geometry">
+                <rect>
+                 <x>460</x>
+                 <y>320</y>
+                 <width>61</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius: 4px;
+background-color: rgb(255, 255, 127);</string>
+               </property>
+               <property name="text">
+                <string>find</string>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers/feathers.qrc">
+                 <normaloff>:/feathers/arrow-up-right.svg</normaloff>:/feathers/arrow-up-right.svg</iconset>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_8">
+               <property name="geometry">
+                <rect>
+                 <x>340</x>
+                 <y>320</y>
+                 <width>113</width>
+                 <height>25</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(123, 111, 255);</string>
+               </property>
+               <property name="placeholderText">
+                <string/>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_32">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>290</y>
+                 <width>71</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Format Disk:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_33">
+               <property name="geometry">
+                <rect>
+                 <x>270</x>
+                 <y>320</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Disk Path:</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_28">
+               <property name="geometry">
+                <rect>
+                 <x>670</x>
+                 <y>420</y>
+                 <width>111</width>
+                 <height>81</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	background-color: rgb(255, 255, 127);
+
+border-radius:15px;}
+
+</string>
+               </property>
+               <property name="text">
+                <string>Clone</string>
+               </property>
+               <property name="icon">
+                <iconset resource="blue/blue.qrc">
+                 <normaloff>:/blue/disc.svg</normaloff>:/blue/disc.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_34">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>390</y>
+                 <width>71</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Clone Disk:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_35">
+               <property name="geometry">
+                <rect>
+                 <x>290</x>
+                 <y>420</y>
+                 <width>51</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Source:</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_4">
+               <property name="geometry">
+                <rect>
+                 <x>460</x>
+                 <y>420</y>
+                 <width>61</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius: 4px;
+background-color: rgb(255, 255, 127);</string>
+               </property>
+               <property name="text">
+                <string>find</string>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers/feathers.qrc">
+                 <normaloff>:/feathers/arrow-up-right.svg</normaloff>:/feathers/arrow-up-right.svg</iconset>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_9">
+               <property name="geometry">
+                <rect>
+                 <x>340</x>
+                 <y>420</y>
+                 <width>113</width>
+                 <height>25</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(123, 111, 255);</string>
+               </property>
+               <property name="placeholderText">
+                <string/>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_5">
+               <property name="geometry">
+                <rect>
+                 <x>460</x>
+                 <y>470</y>
+                 <width>61</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius: 4px;
+background-color: rgb(255, 255, 127);</string>
+               </property>
+               <property name="text">
+                <string>find</string>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers/feathers.qrc">
+                 <normaloff>:/feathers/arrow-down-left.svg</normaloff>:/feathers/arrow-down-left.svg</iconset>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_36">
+               <property name="geometry">
+                <rect>
+                 <x>270</x>
+                 <y>470</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Destination:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_10">
+               <property name="geometry">
+                <rect>
+                 <x>340</x>
+                 <y>470</y>
+                 <width>113</width>
+                 <height>25</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(123, 111, 255);</string>
+               </property>
+               <property name="placeholderText">
+                <string/>
+               </property>
+              </widget>
+              <widget class="QCommandLinkButton" name="commandLinkButton">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>557</y>
+                 <width>271</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 85, 255);</string>
+               </property>
+               <property name="text">
+                <string>View Disk Defaults in Json.Config</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="tab_2">
+              <attribute name="title">
+               <string>File OPs</string>
+              </attribute>
+              <widget class="QLabel" name="label_37">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>441</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(170, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>'''Select Disk to Start Disk OPERATIONS, check Recursive LIsting to Show entire Disk Content!'''</string>
+               </property>
+              </widget>
+              <widget class="QCheckBox" name="checkBox">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>40</y>
+                 <width>121</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Recursive Listing</string>
+               </property>
+              </widget>
+              <widget class="QListView" name="listView">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>70</y>
+                 <width>256</width>
+                 <height>192</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+              <widget class="QTableView" name="tableView">
+               <property name="geometry">
+                <rect>
+                 <x>280</x>
+                 <y>70</y>
+                 <width>501</width>
+                 <height>101</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_11">
+               <property name="geometry">
+                <rect>
+                 <x>280</x>
+                 <y>180</y>
+                 <width>501</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="placeholderText">
+                <string>                                     For Viewing and Editing file Content</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_7">
+               <property name="geometry">
+                <rect>
+                 <x>280</x>
+                 <y>220</y>
+                 <width>71</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius: 5px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="icons1/icons1.qrc">
+                 <normaloff>:/icons1/upload.svg</normaloff>:/icons1/upload.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_8">
+               <property name="geometry">
+                <rect>
+                 <x>720</x>
+                 <y>220</y>
+                 <width>71</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius: 5px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="icons/icons.qrc">
+                 <normaloff>:/icons/delete.svg</normaloff>:/icons/delete.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_10">
+               <property name="geometry">
+                <rect>
+                 <x>380</x>
+                 <y>230</y>
+                 <width>161</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>   Update</string>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers/feathers.qrc">
+                 <normaloff>:/feathers/rewind.svg</normaloff>:/feathers/rewind.svg</iconset>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_11">
+               <property name="geometry">
+                <rect>
+                 <x>539</x>
+                 <y>230</y>
+                 <width>161</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::RightToLeft</enum>
+               </property>
+               <property name="text">
+                <string>Delete   </string>
+               </property>
+               <property name="icon">
+                <iconset resource="feathers/feathers.qrc">
+                 <normaloff>:/feathers/fast-forward.svg</normaloff>:/feathers/fast-forward.svg</iconset>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_12">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>300</y>
+                 <width>271</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <property name="toolTip">
+                <string>Generate Health Report for Mounted Disk</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
+background-color: rgb(170, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>    Write New File to Disk</string>
+               </property>
+               <property name="icon">
+                <iconset resource="white/white.qrc">
+                 <normaloff>:/white/arrow-right-circle.svg</normaloff>:/white/arrow-right-circle.svg</iconset>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_12">
+               <property name="geometry">
+                <rect>
+                 <x>130</x>
+                 <y>350</y>
+                 <width>281</width>
+                 <height>25</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(123, 111, 255);</string>
+               </property>
+               <property name="placeholderText">
+                <string>           Include File Extension Eg. Note.txt</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_38">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>350</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>File Name:</string>
+               </property>
+              </widget>
+              <widget class="QCheckBox" name="checkBox_2">
+               <property name="geometry">
+                <rect>
+                 <x>430</x>
+                 <y>350</y>
+                 <width>81</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(218, 35, 69);</string>
+               </property>
+               <property name="text">
+                <string>Encrypt</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_13">
+               <property name="geometry">
+                <rect>
+                 <x>610</x>
+                 <y>350</y>
+                 <width>161</width>
+                 <height>22</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_39">
+               <property name="geometry">
+                <rect>
+                 <x>540</x>
+                 <y>350</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Password:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_40">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>390</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Content :</string>
+               </property>
+              </widget>
+              <widget class="QTextEdit" name="textEdit">
+               <property name="geometry">
+                <rect>
+                 <x>130</x>
+                 <y>390</y>
+                 <width>641</width>
+                 <height>87</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_41">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>540</y>
+                 <width>131</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Total Disk Size:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_42">
+               <property name="geometry">
+                <rect>
+                 <x>400</x>
+                 <y>540</y>
+                 <width>151</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Total Space Left:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_43">
+               <property name="geometry">
+                <rect>
+                 <x>240</x>
+                 <y>540</y>
+                 <width>81</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(199, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>0000</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_44">
+               <property name="geometry">
+                <rect>
+                 <x>630</x>
+                 <y>540</y>
+                 <width>81</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>0000</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_13">
+               <property name="geometry">
+                <rect>
+                 <x>610</x>
+                 <y>20</y>
+                 <width>181</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="toolTip">
+                <string>Generate Health Report for Mounted Disk</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-top-left-radius: 12px;
+border-bottom-left-radius: 12px;
+background-color: rgb(170, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>     Browse Disks</string>
+               </property>
+               <property name="icon">
+                <iconset resource="white/white.qrc">
+                 <normaloff>:/white/arrow-right-circle.svg</normaloff>:/white/arrow-right-circle.svg</iconset>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_6">
+               <property name="geometry">
+                <rect>
+                 <x>490</x>
+                 <y>20</y>
+                 <width>111</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius: 12px;
+background-color: rgb(255, 120, 122);</string>
+               </property>
+               <property name="text">
+                <string>      DiskLabel</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="profile_page">
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QTabWidget" name="tabWidget_2">
+             <property name="currentIndex">
+              <number>1</number>
+             </property>
+             <widget class="QWidget" name="tab_9">
+              <attribute name="title">
+               <string>Fat32 Manager</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="tab_10">
+              <attribute name="title">
+               <string>Fat32 Manager Errors</string>
+              </attribute>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="messages_page">
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QTextBrowser" name="textBrowser_2">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;h3 style=&quot; margin-top:0px; margin-bottom:14px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:150%; background-color:#292a2d;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; font-weight:496; color:#f8faff; background-color:#292a2d;&quot;&gt;FAT Table Overview&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:14px; margin-bottom:14px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px; background-color:#292a2d;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff; background-color:#292a2d;&quot;&gt;The FAT (File Allocation Table) is a core component of the FAT32 filesystem. It tracks the allocation status of every cluster on the disk, manages file/directory storage chains, and handles bad sectors. Key responsibilities include:&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:14px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Cluster Allocation/Freeing&lt;/span&gt;: Assigning/releasing clusters for file storage.&lt;/li&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Chain Management&lt;/span&gt;: Linking clusters belonging to the same file/directory.&lt;/li&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Integrity Checks&lt;/span&gt;: Detecting cross-linked clusters, circular references, and bad sectors.&lt;/li&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Slack Space Calculation&lt;/span&gt;: Estimating unused space within partially filled clusters.&lt;/li&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Statistics&lt;/span&gt;: Reporting free/used/bad clusters, fragmentation, and utilization.&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 style=&quot; margin-top:18px; margin-bottom:14px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:150%; background-color:#292a2d;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; font-weight:496; color:#f8faff; background-color:#292a2d;&quot;&gt;Data Structure for the FAT Table&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:14px; margin-bottom:14px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px; background-color:#292a2d;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; font-weight:600; color:#f8faff;&quot;&gt;The FAT table is implemented as a Python list of integers.&lt;/span&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;&lt;br /&gt;Each index in the list represents a cluster number, and the value at that index indicates the cluster's status or the next cluster in a chain.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:14px; margin-bottom:14px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px; background-color:#292a2d;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; font-weight:600; color:#f8faff;&quot;&gt;Structure Details:&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:14px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;In-Memory Representation&lt;/span&gt;: &lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;self.fat_table = [0x00000000] * (total_clusters + 2)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;Initialized as a list of zeros (&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;FREE_CLUSTER&lt;/span&gt;), with length &lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;total_clusters + 2&lt;/span&gt;.&lt;/li&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Index 0&lt;/span&gt;: Media descriptor + reserved bits (e.g., &lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;0x0FFFFF00&lt;/span&gt;).&lt;/li&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Index 1&lt;/span&gt;: Always marked as &lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;END_OF_CHAIN&lt;/span&gt; (&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;0x0FFFFFFF&lt;/span&gt;).&lt;/li&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Index 2&lt;/span&gt;: Root directory cluster (marked as &lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;END_OF_CHAIN&lt;/span&gt;).&lt;/li&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Indices 3+&lt;/span&gt;: Data clusters (free by default).&lt;/li&gt;&lt;/ul&gt;
+&lt;p style=&quot; margin-top:14px; margin-bottom:14px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px; background-color:#292a2d;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; font-weight:600; color:#f8faff;&quot;&gt;Entry Meanings:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff; background-color:#292a2d;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; border-collapse:collapse;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;td style=&quot; padding-left:0; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#000000; border-right-color:#8b8b8b; border-bottom-color:#8b8b8b; border-left-color:#8b8b8b; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; font-weight:600; color:#f5f5f5;&quot;&gt;Value&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:10; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#000000; border-right-color:#8b8b8b; border-bottom-color:#8b8b8b; border-left-color:#8b8b8b; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; font-weight:600; color:#f5f5f5;&quot;&gt;Constant&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:10; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#000000; border-right-color:#8b8b8b; border-bottom-color:#8b8b8b; border-left-color:#8b8b8b; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; font-weight:600; color:#f5f5f5;&quot;&gt;Description&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tr&gt;
+&lt;td style=&quot; padding-left:0; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; font-weight:496; color:#f8faff; background-color:#424242;&quot;&gt;0x00000000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:10; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; font-weight:496; color:#f8faff; background-color:#424242;&quot;&gt;FREE_CLUSTER&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:10; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;Cluster is available for allocation.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; padding-left:0; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; font-weight:496; color:#f8faff; background-color:#424242;&quot;&gt;0x0FFFFFF0&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:10; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; font-weight:496; color:#f8faff; background-color:#424242;&quot;&gt;RESERVED_CLUSTER&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:10; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;Reserved (unused in FAT32).&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; padding-left:0; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; font-weight:496; color:#f8faff; background-color:#424242;&quot;&gt;0x0FFFFFF7&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:10; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; font-weight:496; color:#f8faff; background-color:#424242;&quot;&gt;BAD_CLUSTER&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:10; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;Cluster is damaged/unusable.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; padding-left:0; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; font-weight:496; color:#f8faff; background-color:#424242;&quot;&gt;0x0FFFFFF8&lt;/span&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;–&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; font-weight:496; color:#f8faff; background-color:#424242;&quot;&gt;0x0FFFFFFF&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:10; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; font-weight:496; color:#f8faff; background-color:#424242;&quot;&gt;END_OF_CHAIN&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:10; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;Last cluster in a file/directory chain.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; padding-left:0; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; font-style:italic; color:#f8faff;&quot;&gt;Other values&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:10; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;—&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; padding-left:10; padding-right:10; padding-top:10; padding-bottom:10; border-bottom:1px; border-top-color:#525252; border-right-color:#525252; border-bottom-color:#525252; border-left-color:#525252; border-bottom-style:solid;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:172%;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;Next cluster in the chain.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;hr /&gt;
+&lt;h3 style=&quot; margin-top:18px; margin-bottom:14px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:150%; background-color:#292a2d;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; font-weight:496; color:#f8faff; background-color:#292a2d;&quot;&gt;Key Operations&lt;/span&gt;&lt;/h3&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:14px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Reading/Writing Entries&lt;/span&gt;:&lt;/li&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;get_fat_entry(cluster)&lt;/span&gt;: Returns the next cluster in the chain or status.&lt;/li&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;set_fat_entry(cluster, value)&lt;/span&gt;: Updates a FAT entry on disk (handles primary/backup FATs).&lt;/li&gt;&lt;/ul&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Cluster Management&lt;/span&gt;:&lt;/li&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;allocate_cluster()&lt;/span&gt;: Finds a free cluster, marks it as used.&lt;/li&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;free_cluster_chain(start_cluster)&lt;/span&gt;: Releases all clusters in a chain.&lt;/li&gt;&lt;/ul&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Utilities&lt;/span&gt;:&lt;/li&gt;&lt;/ol&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;&quot;&gt;&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;get_cluster_chain(start_cluster)&lt;/span&gt;: Returns all clusters in a chain.&lt;/li&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;get_statistics()&lt;/span&gt;: Reports free/used/bad clusters, space utilization.&lt;/li&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-weight:496; background-color:#424242;&quot;&gt;check_integrity()&lt;/span&gt;: Detects filesystem issues (e.g., cross-linked clusters).&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 style=&quot; margin-top:18px; margin-bottom:14px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:150%; background-color:#292a2d;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; font-weight:496; color:#f8faff; background-color:#292a2d;&quot;&gt;Example Workflow&lt;/span&gt;&lt;/h3&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:14px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Initialize FAT&lt;/span&gt;:&lt;/li&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px; line-height:12.573px; background-color:#404045;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#babac1;&quot;&gt;python&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:4px; -qt-block-indent:1; text-indent:0px; line-height:0%; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#babac1;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#bbbbbb;&quot;&gt;Copy&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:4px; -qt-block-indent:1; text-indent:0px; line-height:0%; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#babac1;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#bbbbbb;&quot;&gt;Download&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;fat &lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e9ae7e;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt; FATManager&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e3eaf2;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;disk&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e3eaf2;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt; boot_sector&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e3eaf2;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;fat&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e3eaf2;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;initialize_fat&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e3eaf2;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;disk&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e3eaf2;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#8da1b9;&quot;&gt;# Writes initial FAT to disk&lt;/span&gt;&lt;/p&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Allocate a File&lt;/span&gt;:&lt;/li&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px; line-height:12.573px; background-color:#404045;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#babac1;&quot;&gt;python&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:4px; -qt-block-indent:1; text-indent:0px; line-height:0%; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#babac1;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#bbbbbb;&quot;&gt;Copy&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:4px; -qt-block-indent:1; text-indent:0px; line-height:0%; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#babac1;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#bbbbbb;&quot;&gt;Download&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;chain &lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e9ae7e;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt; fat&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e3eaf2;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;allocate_cluster_chain&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e3eaf2;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e6d37a;&quot;&gt;5000&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e3eaf2;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#8da1b9;&quot;&gt;# Allocates clusters for a 5KB file&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#8da1b9;&quot;&gt;# chain = [3, 4, 5] (clusters linked as 3 → 4 → 5)&lt;/span&gt;&lt;/p&gt;
+&lt;li style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#f8faff;&quot; style=&quot; margin-top:4px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28.575px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Free Resources&lt;/span&gt;:&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px; line-height:12.573px; background-color:#404045;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#babac1;&quot;&gt;python&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:4px; -qt-block-indent:1; text-indent:0px; line-height:0%; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#babac1;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#bbbbbb;&quot;&gt;Copy&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:4px; -qt-block-indent:1; text-indent:0px; line-height:0%; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#babac1;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'quote-cjk-patch','Inter','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Noto Sans','Ubuntu','Cantarell','Helvetica Neue','Oxygen','Open Sans','sans-serif'; font-size:8pt; color:#bbbbbb;&quot;&gt;Download&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;fat&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e3eaf2;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;free_cluster_chain&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e3eaf2;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;chain&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#e3eaf2;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#f8faff;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot; font-family:'Menlo','Roboto Mono','Courier New','Courier','monospace','Inter','sans-serif'; font-size:8pt; color:#8da1b9;&quot;&gt;# Marks clusters 3,4,5 as free&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="notifications_page">
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>200</y>
+             <width>751</width>
+             <height>91</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Warnings and suggestions about all disks in current directory</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="settings_page">
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QTextBrowser" name="textBrowser">
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;💾 FAT32 Virtual Disk Management System&lt;/span&gt;&lt;/h1&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;🛠️ &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-style:italic;&quot;&gt;Built from Scratch, With ❤️ in Python (No External FAT Libraries)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:40px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Welcome!&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; This project is a &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;pure Python implementation&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; of a fully functional &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;FAT32 disk management system&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; — no shortcuts, no third-party libraries, just raw disk magic. Designed with forensic-grade precision, system-level logic, and user-level simplicity.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🔍 What Is It?&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:40px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;A complete, modular, command-line-driven FAT32 disk manager that allows you to:&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-size:8pt;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;📀 &lt;span style=&quot; font-weight:600;&quot;&gt;Create&lt;/span&gt;, 💥 &lt;span style=&quot; font-weight:600;&quot;&gt;Format&lt;/span&gt;, 🧬 &lt;span style=&quot; font-weight:600;&quot;&gt;Clone&lt;/span&gt;, and 🔧 &lt;span style=&quot; font-weight:600;&quot;&gt;Mount&lt;/span&gt; virtual disks.&lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;📂 &lt;span style=&quot; font-weight:600;&quot;&gt;Manage files&lt;/span&gt;, 🧹 &lt;span style=&quot; font-weight:600;&quot;&gt;Calculate slack space&lt;/span&gt;, and 💻 &lt;span style=&quot; font-weight:600;&quot;&gt;Parse boot sectors&lt;/span&gt;.&lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;🔐 &lt;span style=&quot; font-weight:600;&quot;&gt;Encrypt files with a password&lt;/span&gt;, 🧪 &lt;span style=&quot; font-weight:600;&quot;&gt;Run disk health checks&lt;/span&gt;, and 📈 &lt;span style=&quot; font-weight:600;&quot;&gt;Visualize stats&lt;/span&gt;.&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🧱 Architecture Overview&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;📦 Module&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🔧 Purpose&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;disk/&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Disk creation, cloning, and formatting logic&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;fat/&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;FAT table handling, slack space analysis&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;fs/&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;File/directory CRUD, metadata operations&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;boot/&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Boot sector (VBR) parsing and inspection&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;utils/&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Logging, config, encryption helpers&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🧩 Key Features &amp;amp; Capabilities&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🌟 Feature&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🔍 Description&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;🎛️ Modular Design&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Organized by functional purpose for clarity and reusability&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;📀 Virtual Disk Creation&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Generate a new FAT32 disk image with user-defined geometry&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;🧼 Disk Formatting&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Allocate VBR, FATs, root directory, and compute slack&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;🧬 Disk Cloning&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Byte-accurate clone of any physical or virtual disk&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;🗃 FAT Management&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Traverse, allocate, free FAT chains; detect bad clusters&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;📁 File CRUD&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Create, delete, read, update files and folders directly on the disk&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;🕵️ File Search&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Search by timestamps, including soft-deleted entries&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;📜 Boot Sector Parser&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;View and edit all BPB/VBR metadata in a human-readable format&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;🔍 Health Diagnostics&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Report on cross-linked clusters, free space, slack, and more&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;🛡️ Encryption&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Password-protected file storage using built-in tools (🔐 optional)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;🧠 Reports&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Generate CLI/JSON reports on disk layout, health, and usage&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🧠 FAT32 Disk Structure (Simplified)&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;txt&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;CopierModifier&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;[ MBR ] &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;   ↓&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;[ Boot Sector / VBR ] → [ FSInfo Sector ]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;   ↓&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;[ FAT Table 1 ] → [ FAT Table 2 ]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;   ↓&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;[ Root Directory ]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;   ↓&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;[ Data Region ]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New'; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🧠 How It Works&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;📁 Each &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;file or directory&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; is stored in clusters. The &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;FAT table&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; maps the path of each file through those clusters.&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-size:8pt;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;🟢 Free clusters&lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;🔴 Used clusters&lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;⚠️ Bad sectors&lt;/li&gt;&lt;/ul&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;📦 The &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;root directory&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; holds names, timestamps, and first-cluster pointers.&lt;br /&gt;🔗 FAT entries point to the next cluster or signal the end of a chain (EOF).&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🔍 Search + Audit Features&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🔍 Tool&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;💡 Usage&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;search&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Find files by time range (created, modified, deleted)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;fsck&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;File system consistency check (FAT chains, cross-links)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;health-report&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Full integrity, slack, and usage diagnostics&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;encrypt-file&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; 🔐&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Encrypt a file with a password (optional feature)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🔧 Command-Line Power 💻&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;📚 Command&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🧰 Purpose&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;create-disk&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Generate a new FAT32 disk image&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;clone-disk&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Clone an existing physical/virtual disk&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;format&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Format a disk with proper layout&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;mount&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Mount disk and start file operations&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;fsck&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Run file system checks&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;list&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Display directory listings and metadata&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;search&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Look for files by time range&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;health-report&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Show detailed FAT health info&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🛡 Standards &amp;amp; Compatibility&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;✅ &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;FAT32-compliant&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; for wide compatibility&lt;br /&gt;🧪 Validated using loop-mounting and fsck.vfat tools&lt;br /&gt;🛠 Designed to run on &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Linux (Kali, Termux)&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; without needing any kernel mods or elevated permissions.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;⚠️ FAT32 Limitations&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🔒 Limitation&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;❗ Notes&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;4 GB Max File Size&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Built into the FAT32 spec&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;No File Permissions&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;No UNIX-style perms, though our encryption helps&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;No Journaling&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Riskier in sudden power loss scenarios&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;📌 Use Cases&lt;/span&gt;&lt;/h2&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-size:8pt;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;💽 Building your own USB image generators&lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;🔬 Forensics labs &amp;amp; OS development&lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;📚 FAT32 education tools&lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;🕵️ Security testing &amp;amp; disk inspection tools&lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;🎮 Retro game system image builders&lt;/li&gt;&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;💡 Why This Project?&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:40px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Because &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;learning by building&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; is the ultimate teacher.&lt;br /&gt;You're not just using FAT32 — you're &lt;/span&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;reconstructing it&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;, understanding every bit, and redefining what’s possible with Python.&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;🧰 Ready to Build?&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Next up, upload your &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:8pt;&quot;&gt;main.py&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; file so I can begin writing the code and building your virtual FAT32 world 🔧🐍📀&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Let’s build your disk universe, one cluster at a time! &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QWidget" name="icon_only_widget" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(31, 149, 239);
+
+}
+
+QPushButton {
+   color:white;
+   height:30px;	
+    border:none;
+   border-radius:10px;
+
+}
+QPushButton:checked{
+background-color: #F5FAFE;
+color:#1F95EF;
+font-weight:bold;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="minimumSize">
+            <size>
+             <width>55</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>55</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="white/white.qrc">:/white/disc.svg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>15</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="dashboard_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="white/white.qrc">
+             <normaloff>:/white/grid.svg</normaloff>
+             <normalon>:/icons2/grid.svg</normalon>:/white/grid.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="profile_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="white/white.qrc">
+             <normaloff>:/white/file-minus.svg</normaloff>
+             <normalon>:/icons2/file-minus.svg</normalon>:/white/file-minus.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="messages_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="white/white.qrc">
+             <normaloff>:/white/database.svg</normaloff>
+             <normalon>:/icons2/database.svg</normalon>:/white/database.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="notifications_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="white/white.qrc">
+             <normaloff>:/white/bell.svg</normaloff>
+             <normalon>:/icons2/bell.svg</normalon>:/white/bell.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="settings_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="white/white.qrc">
+             <normaloff>:/white/info.svg</normaloff>
+             <normalon>:/icons2/info.svg</normalon>:/white/info.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_3" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>39</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(31, 149, 239);
+color: white;
+}</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_21">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>41</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	background-color: rgb(0, 255, 255);
+border-radius:15px;}
+QPushButton:checked{
+background-color: rgb(198, 200, 99);
+color:#000000;
+font-weight:bold;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="icons1/icons1.qrc">
+            <normaloff>:/icons1/chevrons-up.svg</normaloff>
+            <normalon>:/feathers/chevrons-down.svg</normalon>:/icons1/chevrons-up.svg</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>342</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="white/white.qrc">
+           <normaloff>:/white/power.svg</normaloff>:/white/power.svg</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="blue/blue.qrc"/>
+  <include location="icons1/icons1.qrc"/>
+  <include location="icons2/icons2.qrc"/>
+  <include location="new/new.qrc"/>
+  <include location="feathers/feathers.qrc"/>
+  <include location="icons/icons.qrc"/>
+  <include location="white/white.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_only_widget</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>334</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>78</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_name_widget</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>336</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>268</x>
+     <y>468</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>settings_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>settings_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>143</x>
+     <y>283</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>notifications_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>notifications_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>247</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>144</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>messages_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>messages_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>47</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>133</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>profile_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>profile_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>145</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dashboard_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dashboard_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>142</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dashboard_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dashboard_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>63</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>profile_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>profile_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>154</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>63</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>messages_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>messages_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>66</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>notifications_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>notifications_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>135</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>59</x>
+     <y>233</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>settings_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>settings_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>160</x>
+     <y>284</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>41</x>
+     <y>285</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_21</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButton_19</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>321</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_19</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButton_21</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>153</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>36</x>
+     <y>315</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_19</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>header_widget</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>172</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>354</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_21</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>header_widget</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>51</x>
+     <y>325</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>340</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>36</x>
+     <y>711</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>43</x>
+     <y>742</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>152</x>
+     <y>708</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>178</x>
+     <y>742</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

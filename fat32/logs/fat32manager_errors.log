@@ -1,0 +1,78 @@
+2025-05-30 01:40:35,360 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: 'BootSector' object has no attribute 'get_total_clusters'
+2025-05-30 01:46:36,128 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: Failed to format disk: 'BootSector' object has no attribute 'generate_boot_sector'
+2025-05-30 01:49:11,080 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: Failed to format disk: 'H' format requires 0 <= number <= 65535
+2025-05-30 01:53:14,917 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: Failed to format disk: 'H' format requires 0 <= number <= 65535
+2025-05-30 11:20:25,006 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: Failed to format disk: pack expected 13 items for packing (got 14)
+2025-05-30 11:37:08,718 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: Failed to format disk: 'BootSector' object has no attribute 'generate_fsinfo_sector'
+2025-05-30 11:39:47,393 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: Invalid boot sector signature
+2025-05-30 11:40:38,368 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: Invalid boot sector signature
+2025-05-30 11:49:47,262 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: Failed to format disk: Missing signature: b'U\xaa\x00\x00'
+2025-05-30 11:55:15,396 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: not enough values to unpack (expected 14, got 13)
+2025-05-30 12:13:28,204 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: not enough values to unpack (expected 14, got 13)
+2025-05-30 12:14:31,976 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: not enough values to unpack (expected 14, got 13)
+2025-05-30 12:19:17,194 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: Failed to format disk: pack expected 13 items for packing (got 14)
+2025-05-30 14:10:32,912 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /test.txt
+2025-05-30 14:21:41,444 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /test.txt
+2025-05-30 14:23:42,500 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: Failed to format disk: pack expected 13 items for packing (got 14)
+2025-05-30 15:01:33,521 [   ERROR] [MainThread] FAT32Manager:298 - FAT initialization failed: Invalid FAT count: 0
+2025-05-30 15:04:05,473 [   ERROR] [MainThread] FAT32Manager:298 - Disk image not found: virtual_disk.img
+2025-05-30 15:04:14,451 [   ERROR] [MainThread] FAT32Manager:298 - FAT initialization failed: Invalid FAT count: 0
+2025-05-30 15:04:27,043 [   ERROR] [MainThread] FAT32Manager:298 - FAT initialization failed: Invalid FAT count: 0
+2025-05-30 15:06:45,984 [   ERROR] [MainThread] FAT32Manager:298 - FAT initialization failed: Invalid FAT count: 0
+2025-05-30 15:09:59,359 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: type object 'BootSector' has no attribute 'from_disk'
+2025-05-30 15:10:28,143 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: type object 'BootSector' has no attribute 'from_disk'
+2025-05-30 15:12:30,480 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: list assignment index out of range
+2025-05-30 15:14:05,943 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create FATManager: list assignment index out of range
+2025-05-30 15:14:05,944 [   ERROR] [MainThread] FAT32Manager:298 - FATManager error type: IndexError
+2025-05-30 15:14:05,960 [   ERROR] [MainThread] FAT32Manager:298 - FATManager traceback: Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\diskui\fat32\main.py", line 155, in mount_disk
+    fat_manager = FATManager(disk, boot_sector)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\diskui\fat32\fat\fat_manager.py", line 34, in __init__
+    self._initialize_fat_table()
+  File "C:\Users\HP\Desktop\diskui\fat32\fat\fat_manager.py", line 92, in _initialize_fat_table
+    self.fat_table[2] = self.END_OF_CHAIN
+    ~~~~~~~~~~~~~~^^^
+IndexError: list assignment index out of range
+
+2025-05-30 15:14:46,420 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: list assignment index out of range
+2025-05-30 15:16:48,775 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: Failed to open disk: [Errno 13] Permission denied: 'virtual_disk.img'
+2025-05-30 15:18:32,432 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: list assignment index out of range
+2025-05-30 15:27:27,868 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: list assignment index out of range
+2025-05-30 15:29:27,411 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: list assignment index out of range
+2025-05-30 15:31:15,751 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: list assignment index out of range
+2025-05-30 15:31:56,441 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: list assignment index out of range
+2025-05-30 15:34:50,371 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: Failed to open disk: [Errno 13] Permission denied: 'virtual_disk.img'
+2025-05-30 15:35:06,833 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: Failed to open disk: [Errno 13] Permission denied: 'virtual_disk.img'
+2025-05-30 15:35:10,683 [   ERROR] [MainThread] FAT32Manager:298 - Failed to mount disk: Failed to open disk: [Errno 13] Permission denied: 'virtual_disk.img'
+2025-05-30 15:35:14,800 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: Failed to create virtual disk: [Errno 13] Permission denied: 'virtual_disk.img'
+2025-05-30 15:35:51,415 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /test.txt
+2025-05-30 15:36:13,988 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /test.txt
+2025-05-30 17:12:31,396 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: FATManager.__init__() missing 1 required positional argument: 'boot_sector'
+2025-05-30 17:13:29,037 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: FATManager.__init__() missing 1 required positional argument: 'boot_sector'
+2025-05-30 17:17:59,277 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: FATManager.__init__() missing 1 required positional argument: 'boot_sector'
+2025-05-30 17:19:53,612 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: Failed to format disk: 'bytes' object has no attribute 'encode'
+2025-05-30 17:20:56,059 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: Failed to format disk: 'bytes' object has no attribute 'encode'
+2025-05-30 17:21:33,196 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create disk: Failed to format disk: 'bytes' object has no attribute 'encode'
+2025-05-30 17:59:20,911 [   ERROR] [MainThread] FAT32Manager:298 - Disk image not found: disk.img
+2025-05-30 18:00:36,797 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /documents/test.py
+2025-05-30 18:08:17,250 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /documents/test.py
+2025-05-30 18:10:29,122 [   ERROR] [MainThread] FAT32Manager:298 - Disk image not found: disk.img
+2025-05-30 18:10:48,315 [   ERROR] [MainThread] FAT32Manager:298 - Failed to delete directory: /documents (may not be empty)
+2025-05-30 18:11:00,247 [   ERROR] [MainThread] FAT32Manager:298 - Failed to delete directory: /document (may not be empty)
+2025-05-30 18:13:13,407 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /documents/test.py
+2025-05-30 18:13:53,947 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /documents/project/test.py
+2025-05-30 18:19:27,610 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /documents/project/test.py
+2025-05-30 18:34:19,260 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /documents/project/test.py
+2025-05-30 18:48:28,947 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /documents/note.txt
+2025-05-30 18:50:00,679 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /documents/test.py
+2025-05-30 18:51:39,936 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /documents/test.py
+2025-05-30 18:52:45,422 [   ERROR] [MainThread] FAT32Manager:298 - Failed to delete directory: /documents
+2025-05-30 18:53:04,712 [   ERROR] [MainThread] FAT32Manager:298 - Failed to delete directory: /document
+2025-05-30 18:57:26,630 [   ERROR] [MainThread] FAT32Manager:298 - Failed to delete directory: /document
+2025-05-30 19:02:33,279 [   ERROR] [MainThread] FAT32Manager:298 - Failed to delete directory: /document
+2025-05-30 19:03:38,549 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /documents/test.py
+2025-05-30 19:04:07,049 [   ERROR] [MainThread] FAT32Manager:298 - Failed to delete directory: /document
+2025-05-30 19:04:43,829 [   ERROR] [MainThread] FAT32Manager:298 - Failed to delete directory: /document
+2025-05-30 19:05:46,029 [   ERROR] [MainThread] FAT32Manager:298 - Failed to delete directory: /doc
+2025-05-30 22:21:16,702 [   ERROR] [MainThread] FAT32Manager:298 - Failed to create file: /doc/test.py
